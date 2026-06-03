@@ -1,0 +1,48 @@
+@use "kit/variables" as *;
+@use "kit/mixins" as *;
+
+.video-section {
+  @include flex-center;
+
+  flex-direction: column;
+  min-height: 320px;
+  padding: 48px 20px 58px;
+  color: $color-white;
+  text-align: center;
+  background:
+    linear-gradient(rgba(60, 24, 23, 0.18), rgba(60, 24, 23, 0.18)),
+    url("../assets/video-flowers.jpg") center / cover no-repeat;
+
+  &__title {
+    @include script-title;
+
+    margin: 0 0 28px;
+    font-size: 37px;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+  }
+
+  &__button {
+    @include flex-center;
+
+    width: 108px;
+    height: 108px;
+    padding-left: 6px;
+    color: $color-coral;
+    font-size: 46px;
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+      transform: scale(1.12) rotate(9deg);
+    }
+  }
+
+  &__text {
+    max-width: 420px;
+    margin: 42px 0 0;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,24 @@
+@use "kit/variables" as *;
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 24px;
+    text-align: center;
+
+    &__address {
+      order: 2;
+      font-size: 10px;
+    }
+
+    &__brand {
+      order: 1;
+    }
+
+    &__copyright {
+      order: 3;
+      justify-self: center;
+    }
+  }
+}

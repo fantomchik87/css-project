@@ -1,0 +1,52 @@
+@use "kit/variables" as *;
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  padding: 0 74px;
+  background-color: $color-coral;
+
+  &__brand {
+    color: $color-white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    padding-bottom: 5px;
+    color: $color-white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s ease, opacity 0.25s ease;
+
+    &:hover {
+      border-bottom-color: $color-white;
+      opacity: 0.9;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}

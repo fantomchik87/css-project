@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+}
+
+@mixin script-title {
+  font-family: $font-title;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}

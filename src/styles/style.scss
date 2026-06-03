@@ -1,0 +1,38 @@
+@use "kit/variables" as *;
+@use "kit/mixins" as *;
+
+@use "menu";
+@use "header";
+@use "text-section";
+@use "video-section";
+@use "footer";
+@use "menu.mobile" as menuMobile;
+@use "header.mobile" as headerMobile;
+@use "text-section.mobile" as textSectionMobile;
+@use "video-section.mobile" as videoSectionMobile;
+@use "footer.mobile" as footerMobile;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  color: $color-text;
+  font-family: $font-main;
+  background-color: #eeeeee;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  @include button-reset;
+}

@@ -1,0 +1,63 @@
+@use "kit/variables" as *;
+
+@media (max-width: 600px) {
+  .menu {
+    height: 52px;
+    padding: 0 18px;
+
+    &__list {
+      position: absolute;
+      top: 52px;
+      right: 0;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      margin: 0;
+      background-color: rgba($color-coral, 0.98);
+    }
+
+    &__list--open {
+      display: flex;
+    }
+
+    &__item {
+      border-top: 1px solid rgba($color-white, 0.28);
+    }
+
+    &__link {
+      display: block;
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    &__burger {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-left: auto;
+      background: transparent;
+    }
+
+    &__burger-line {
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: $color-white;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    &__burger--open &__burger-line:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    &__burger--open &__burger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    &__burger--open &__burger-line:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+}

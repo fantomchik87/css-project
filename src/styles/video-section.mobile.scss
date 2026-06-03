@@ -1,0 +1,23 @@
+@use "kit/variables" as *;
+
+@media (max-width: 600px) {
+  .video-section {
+    min-height: 310px;
+    padding: 36px 28px 48px;
+
+    &__title {
+      font-size: 29px;
+    }
+
+    &__button {
+      width: 86px;
+      height: 86px;
+      font-size: 37px;
+    }
+
+    &__text {
+      margin-top: 34px;
+      font-size: 11px;
+    }
+  }
+}

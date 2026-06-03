@@ -1,0 +1,28 @@
+@use "kit/variables" as *;
+
+@media (max-width: 600px) {
+  .text-section {
+    min-height: 0;
+    padding: 58px 42px 70px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      margin-top: 36px;
+      font-size: 13px;
+    }
+
+    &__columns {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 34px auto 34px;
+    }
+
+    &__column {
+      font-size: 11px;
+      text-align: left;
+    }
+  }
+}

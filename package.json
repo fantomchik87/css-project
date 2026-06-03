@@ -1,0 +1,27 @@
+{
+  "name": "css-project-final",
+  "version": "1.0.0",
+  "description": "Responsive Sass/BEM final CSS project",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass src/styles/style.scss src/styles/style.css --watch",
+    "build": "sass src/styles/style.scss src/styles/style.css",
+    "prod": "sass src/styles/style.scss src/styles/style.css && postcss src/styles/style.css -o src/styles/style.min.css",
+    "lint": "stylelint \"src/styles/**/*.scss\" --fix",
+    "format": "prettier --write \"src/**/*.{html,scss,js}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard-scss": "^16.0.0"
+  }
+}

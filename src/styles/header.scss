@@ -1,0 +1,59 @@
+@use "kit/variables" as *;
+@use "kit/mixins" as *;
+
+.header {
+  position: relative;
+  min-height: 405px;
+  padding: 88px 20px 38px;
+  color: $color-coral;
+  text-align: center;
+  background: url("../assets/hero-flowers.jpg") center / cover no-repeat;
+
+  &__content {
+    @include flex-center;
+
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: $color-white;
+    border-radius: 50%;
+    box-shadow: $shadow-soft;
+  }
+
+  &__logo {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    animation: logo-rotation 6s ease-in-out infinite;
+  }
+
+  &__title {
+    @include script-title;
+
+    margin: 14px 0 0;
+    color: $color-coral;
+    font-size: 33px;
+  }
+
+  &__subtitle {
+    margin: 26px 0 0;
+    color: rgba($color-brown, 0.55);
+    font-size: 12px;
+    line-height: 1.45;
+  }
+}
+
+@keyframes logo-rotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.08) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
