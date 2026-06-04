@@ -4,3 +4,6 @@ dist/
 *.log
 src/styles/style.css.map
 src/styles/style.min.css.map
+node_modules/
+src/styles/*.css
+src/styles/*.map

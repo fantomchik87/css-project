@@ -4,11 +4,12 @@
   "description": "Responsive Sass/BEM final CSS project",
   "main": "index.js",
   "scripts": {
-    "compile": "sass src/styles/style.scss src/styles/style.css --watch",
-    "build": "sass src/styles/style.scss src/styles/style.css",
-    "prod": "sass src/styles/style.scss src/styles/style.css && postcss src/styles/style.css -o src/styles/style.min.css",
-    "lint": "stylelint \"src/styles/**/*.scss\" --fix",
-    "format": "prettier --write \"src/**/*.{html,scss,js}\""
+  "test": "jest --reporters=jest-junit",
+  "build": "sass --no-source-map src/styles/style.scss src/dist/style.css",
+  "compile": "sass --watch --no-source-map src/styles/style.scss:src/dist/style.css",
+  "prod": "sass --no-source-map src/styles/style.scss src/dist/style.css && postcss src/dist/style.css -o src/dist/style.min.css",
+  "lint": "stylelint \"src/styles/**/*.scss\" --fix",
+  "format": "prettier --write \"src/**/*.{html,scss,js}\""
   },
   "keywords": [],
   "author": "",
