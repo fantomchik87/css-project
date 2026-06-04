@@ -2,16 +2,15 @@
 
 @media (max-width: 600px) {
   .header {
-    min-height: 410px;
-    padding: 88px 24px 42px;
-    background:
-      linear-gradient(rgba($color-coral, 0.92), rgba($color-coral, 0.92)),
-      url("../assets/hero-flowers.jpg") center / cover no-repeat;
+    min-height: 316px;
+    padding: 76px 18px 28px;
+    color: $color-white;
+    background-color: $color-coral;
+    background-size: cover;
 
     &__content {
       width: auto;
       height: auto;
-      margin-top: 10px;
       background: transparent;
       border-radius: 0;
       box-shadow: none;
@@ -20,18 +19,21 @@
     &__logo {
       width: 72px;
       height: 72px;
-      filter: brightness(0) invert(1);
     }
 
     &__title {
+      margin-top: 12px;
       color: $color-white;
-      font-size: 36px;
+      font-size: 32px;
+      line-height: 1.15;
     }
 
     &__subtitle {
-      margin-top: 58px;
+      max-width: 220px;
+      margin-top: 26px;
       color: $color-white;
-      font-size: 13px;
+      font-size: 12px;
+      line-height: 1.45;
     }
   }
 }

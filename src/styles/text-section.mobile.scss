@@ -24,5 +24,24 @@
       font-size: 11px;
       text-align: left;
     }
+
+    &__button,
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
+      transform: none;
+    }
+    &__button,
+    &__button:hover,
+    &__button:focus,
+    &__button:focus-visible {
+      transform: none;
+      outline: none;
+      box-shadow: none;
+  }
+
+  &__button:active {
+    transform: rotate(5deg);
+    }
   }
 }

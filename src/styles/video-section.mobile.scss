@@ -9,15 +9,34 @@
       font-size: 29px;
     }
 
-    &__button {
+    &__button,
+    &__button:hover,
+    &__button:focus,
+    &__button:active {
       width: 86px;
       height: 86px;
       font-size: 37px;
+      transform: none;
     }
 
     &__text {
       margin-top: 34px;
       font-size: 11px;
+    }
+    &__button,
+    &__button:hover,
+    &__button:focus,
+    &__button:focus-visible {
+      width: 86px;
+      height: 86px;
+      font-size: 37px;
+      transform: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+  &__button:active {
+      transform: scale(1.12) rotate(10deg);
     }
   }
 }

@@ -37,7 +37,8 @@
   }
 
   &__subtitle {
-    margin: 26px 0 0;
+    max-width: 280px;
+    margin: 26px auto 0;
     color: rgba($color-brown, 0.55);
     font-size: 12px;
     line-height: 1.45;

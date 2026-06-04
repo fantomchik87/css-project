@@ -80,7 +80,8 @@
   font-size: 33px;
 }
 .header__subtitle {
-  margin: 26px 0 0;
+  max-width: 280px;
+  margin: 26px auto 0;
   color: rgba(110, 74, 69, 0.55);
   font-size: 12px;
   line-height: 1.45;
@@ -317,14 +318,15 @@
 }
 @media (max-width: 600px) {
   .header {
-    min-height: 410px;
-    padding: 88px 24px 42px;
-    background: linear-gradient(rgba(244, 129, 99, 0.92), rgba(244, 129, 99, 0.92)), url("../assets/hero-flowers.jpg") center/cover no-repeat;
+    min-height: 316px;
+    padding: 76px 18px 28px;
+    color: #ffffff;
+    background-color: #f48163;
+    background-size: cover;
   }
   .header__content {
     width: auto;
     height: auto;
-    margin-top: 10px;
     background: transparent;
     border-radius: 0;
     box-shadow: none;
@@ -332,16 +334,19 @@
   .header__logo {
     width: 72px;
     height: 72px;
-    filter: brightness(0) invert(1);
   }
   .header__title {
+    margin-top: 12px;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.15;
   }
   .header__subtitle {
-    margin-top: 58px;
+    max-width: 220px;
+    margin-top: 26px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.45;
   }
 }
 @media (max-width: 600px) {
@@ -365,6 +370,17 @@
     font-size: 11px;
     text-align: left;
   }
+  .text-section__button, .text-section__button:hover, .text-section__button:focus, .text-section__button:active {
+    transform: none;
+  }
+  .text-section__button, .text-section__button:hover, .text-section__button:focus, .text-section__button:focus-visible {
+    transform: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .text-section__button:active {
+    transform: rotate(5deg);
+  }
 }
 @media (max-width: 600px) {
   .video-section {
@@ -374,14 +390,26 @@
   .video-section__title {
     font-size: 29px;
   }
-  .video-section__button {
+  .video-section__button, .video-section__button:hover, .video-section__button:focus, .video-section__button:active {
     width: 86px;
     height: 86px;
     font-size: 37px;
+    transform: none;
   }
   .video-section__text {
     margin-top: 34px;
     font-size: 11px;
+  }
+  .video-section__button, .video-section__button:hover, .video-section__button:focus, .video-section__button:focus-visible {
+    width: 86px;
+    height: 86px;
+    font-size: 37px;
+    transform: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .video-section__button:active {
+    transform: scale(1.12) rotate(10deg);
   }
 }
 @media (max-width: 600px) {
